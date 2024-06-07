@@ -7,9 +7,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
 		integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
 
 <body class="is-preload">
@@ -31,7 +32,8 @@
 				<ul>
 					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
+					<li><a href="#trading-portfolio" id="trading-portfolio-link"><span class="icon solid fa-money-bill-trend-up">Trading Portfolio</span></a>
+					<li><a href="#analytics-portfolio" id="analytics-portfolio-link"><span class="icon solid fa-chart-simple">Analytics Portfolio</span></a>
 					<li><a href="#resume" id="resume-link"><span class="icon solid fa-file">Resume</span></a>
 					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
 					</li>
@@ -68,7 +70,7 @@
 				</header>
 
 				<footer>
-					<a href="#portfolio" class="button scrolly">Learn More</a>
+					<a href="#about" class="button scrolly">Learn More</a>
 				</footer>
 
 			</div>
@@ -84,7 +86,7 @@
 				</header>
 
 				<ul class="text-left">
-					<li class="list">Hello, I'm <strong>Hrushikesh Rageer</strong>, a Market Analyst and Trader with <strong>4+ years</strong> of experience.</li>
+					<li class="list">Hello, I'm <strong>Hrushikesh Rageer</strong>, a market analyst and trader with <strong>4+ years</strong> of experience.</li>
 					<li>I have executed trades totaling over <strong>$600,000</strong> across a diverse portfolio of stocks, commodities, currencies, futures, and options.</li>
 					<li>My expertise lies in conducting thorough analyses of market, blending fundamental and technical approaches, resulting in a commendable <strong>70% success rate</strong>	 in my trades.</li>
 				</ul>
@@ -93,11 +95,11 @@
 		</section>
 
 		<!-- Portfolio -->
-		<section id="portfolio" class="two">
+		<section id="trading-portfolio" class="two">
 			<div class="container">
 
 				<header>
-					<h2>Portfolio</h2>
+					<h2>Trading Portfolio</h2>
 					<hr>
 				</header>
 
@@ -105,7 +107,7 @@
 					<div class="card card1">
 						<article class=" text-center">
 							<h3 class="margin">Trade Transaction Log: $600,000 Portfolio Activity</h3>
-							
+							<a href="#" class="image fit"><img src="./Data source 2.png" alt="" /></a>
 							<header>
 							</header>
 							<ul class="text-left">
@@ -126,7 +128,7 @@
 					<div class="card card1">
 						<article class=" text-center">
 							<h3 class="margin">Media Recognition</h3>
-							
+							<a href="#" class="image fit"><img src="./Data source 2.png" alt="" /></a>
 							<header>
 							</header>
 							<ul class="text-left">
@@ -201,6 +203,44 @@
 						</div>
 		</section>
 
+		<!-- Portfolio -->
+		<section id="analytics-portfolio" class="two">
+			<div class="container">
+
+				<header>
+					<h2>Analytics Portfolio</h2>
+					<hr>
+				</header>
+
+				<div class="container">
+					<div class="card card1">
+						<article class=" text-center">
+							<h3 class="margin">Proof of Concept(PoC) Data Engineering Project</h3>
+							<br>
+							<a href="#" class="image fit"><img src="Project Architecture.png" alt="" /></a>
+							<header>
+							</header>
+							<ul class="text-left">
+								<li>This project involved extracting data from an <strong>Oracle</strong> database, converting it to various
+									file formats (CSV, JSON, Parquet), and storing it in an <strong>S3</strong> bucket using <strong>Talend</strong>.</li>
+								<li><strong>AWS IAM</strong>
+									was used to create a role with the required S3 policies.</li>
+								<li><strong>SnowPipe</strong> was configured to
+									continuously load the data from S3 into Snowflake staging tables, with <strong>AWS SQS</strong> used to
+									send notifications.</li>
+								<li> Data cleansing and transformations were performed in <strong>Snowflake</strong> on
+									the staging data before loading into the final dimension and fact tables.</li>
+							</ul>
+						
+							<button class="margin" onclick="project5()" class="btn">Read more</button>
+							<!-- <button onclick="project2()" class="btn">Trading Log 2</button> -->
+						
+					</div>
+				<!-- <br> -->
+				<!-- <hr>	 -->
+				
+		</section>
+
 
 		<!-- Resume -->
 		<section id="resume" class="two">
@@ -211,7 +251,7 @@
 					<hr>
 				</header>
 
-				<p class="bold">Click here to view my Resume</p>
+				<p class="bold">Please find my resume here, </p>
 
 				<button class="margin" onclick="project4()" class="btn">Resume</button>
 							
@@ -270,6 +310,10 @@
 		}
 		function project4() {
 			window.open("Resume-Hrushikesh-Rageer.pdf","_blank");
+		}
+		
+		function project5() {
+			window.open("https://github.com/hrushikeshrageer/Proof-of-Concept-Data-Engineering-Project","_blank");
 		}
 		
 	</script>
